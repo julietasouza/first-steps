@@ -3,6 +3,7 @@ import Home from "../assets/pages/Home"
 import Vagas from "../assets/pages/Vagas"
 import Simulador from "../assets/pages/Simulador"
 import Perfil from "../assets/pages/Perfil"
+import Buscar from "../assets/pages/Buscar"
 
 const Router = () => {
   return (
@@ -11,6 +12,7 @@ const Router = () => {
       <Route path="/Vagas" element={<Vagas />} />
       <Route path='/Simulador' element={<Simulador />} />
       <Route path='/Perfil' element={<Perfil />} />
+      <Route path='/Buscar' element={<Buscar />} />
     </Routes>
   )
 }

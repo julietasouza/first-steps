@@ -1,16 +1,73 @@
-# React + Vite
+# First Steps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **First Steps** é um protótipo de plataforma de carreira. A interface reúne páginas planejadas para apoiar a criação de currículo, busca de vagas, preparação para entrevistas e organização de um perfil profissional.
 
-Currently, two official plugins are available:
+> O projeto ainda está em desenvolvimento. No estado atual, algumas páginas são protótipos e a busca filtra conteúdos estáticos da própria aplicação; não há integração com serviços de IA, vagas ou backend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades disponíveis
 
-## React Compiler
+- Navegação entre as páginas de currículo, vagas, simulador de entrevista e perfil.
+- Campo de pesquisa no cabeçalho, com resultados para os conteúdos cadastrados na aplicação.
+- Layout e estilos feitos com `styled-components`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- React Router
+- styled-components
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Como executar
+
+### Pré-requisitos
+
+- Node.js e npm instalados.
+
+### Instalação e desenvolvimento
+
+```bash
+npm install
+npm run dev
+```
+
+O Vite exibirá no terminal o endereço local para abrir no navegador.
+
+### Outros comandos
+
+```bash
+npm run build    # gera a versão de produção em dist/
+npm run preview  # serve localmente a versão gerada
+npm run lint     # verifica o código com ESLint
+```
+
+## Páginas
+
+| Caminho | Página |
+| --- | --- |
+| `/` | Currículo Inteligente |
+| `/Vagas` | Vagas Recomendadas |
+| `/Simulador` | Simulador de Entrevista |
+| `/Perfil` | Perfil Profissional |
+| `/Buscar` | Resultados da pesquisa |
+
+## Estrutura do projeto
+
+```text
+src/
+├── App.jsx
+├── main.jsx
+├── Router/
+│   └── Router.jsx
+└── assets/
+    ├── components/
+    │   └── Header/
+    ├── pages/
+    │   ├── Buscar/
+    │   ├── Home/
+    │   ├── Perfil/
+    │   ├── Simulador/
+    │   └── Vagas/
+    ├── fonts/
+    ├── img/
+    └── styles/
+```
